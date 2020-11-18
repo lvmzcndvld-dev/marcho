@@ -23,20 +23,20 @@
   }
 
   &__list-link {
-    padding-bottom: 1px;
+    padding: 0 2px 1px;
     text-transform: uppercase;
     color: $title;
     transition: color .3s;
-    @extend %quicksand-400;
+    @extend %roboto-400;
     &:hover {
-      @extend %quicksand-500;
+      @extend %roboto-700;
       border-bottom: 1px solid $accent;
       color: $accent;
     }
   }
 
   &__list-link--active {
-    @extend %quicksand-500;
+    @extend %roboto-700;
     border-bottom: 1px solid $accent;
     color: $accent;
   }
