@@ -383,4 +383,55 @@
   }
 }
 
+.video-fashion {
+  background-color: $bg;
+  background-image: url('../images/decor/pattern.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  padding: 125px 0;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__popup {
+    max-width: 530px;
+    height: 480px;
+    width: 100%;
+    margin-right: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__content {
+    max-width: 570px;
+  }
+
+  &__subtitle {
+    font-size: 22px;
+    line-height: 26px;
+    color: $accent;
+    padding-top: 75px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
+
+  &__title {
+    text-align: left;
+  }
+
+  &__text {
+    margin-bottom: 55px;
+  }
+
+  &__link {
+    @extend %btn;
+  }
+}
+
 @import 'media'
