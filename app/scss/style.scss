@@ -1771,6 +1771,10 @@
     height: 50px;
     padding: 0 20px;
     border: 1px solid #f0f0f0;
+
+    &:first-child {
+      margin-right: 30px;
+    }
   }
 
   &__textarea {
@@ -2072,9 +2076,6 @@
     float: left;
     margin-right: 30px;
     margin-bottom: 10px;
-    width: 370px;
-    height: 310px;
-    object-fit: cover;
   }
 
   &__right-img {
@@ -2104,12 +2105,22 @@
     }
   }
 
+  &__info-link--comment::before {
+    background-image: url('../images/icons/comment.svg');
+    top: 3px;
+  }
+
+  &__info-link--author::before {
+    background-image: url('../images/icons/user-accent.svg');
+  }
+
   &__form-title {
     text-transform: uppercase;
-    margin: 35px 0 25px;
+    padding: 35px 0 25px;
     color: $title;
     @extend %roboto-700;
     font-size: 24px;
+    border-top: 1px solid #ececec;
   }
 
   .comments-form {
@@ -2123,15 +2134,6 @@
     margin-bottom: 25px;
     color: $title;
   }
-
-  // &__info-link--comment::before {
-  //   background-image: url('../images/icons/comments.svg');
-  // top: 3px;
-  // }
-
-  // &__info-link--author::before {
-  //   background-image: url('../images/icons/user-blog.svg');
-  // }
 
   &__box {
     margin: 25px 0 35px;
@@ -2173,9 +2175,6 @@
   }
 
   &__author-img {
-    height: 140px;
-    width: 140px;
-    object-fit: cover;
     margin-right: 30px;
   }
 
